@@ -6,6 +6,7 @@ let teller = 0;
 let message = "";
 
 function onClick() {
+
     for (let count = 0; count < 10; count++) {
         forloopCheck(count);
     }
@@ -13,21 +14,22 @@ function onClick() {
     while (teller < 10) {
         teller = whileloopCheck(teller);
 
-        message += "Loop teller is: " + teller + "<br/>" ;
+        message = message + "Loop teller is: " + teller + "<br />" ;
         console.log("Loop teller is: " + teller);
 
     }
-    message += "Ik verlaat de loop";
+    message = message + "Ik verlaat de loop"
     label.innerHTML = message;
 
 }
 
 function forloopCheck(count) {
-    if (count == 10) {
-        message += "Ik verlaat de loop" + "<br/>"+"<br />";
+
+    if (count = 10) {
+        message = message + "Ik verlaat de loop" + "<br /><br />" ;
         console.log("Ik verlaat de loop");
     } else {
-        message += "Loop teller is: " + count + "<br/>";
+        message = message + "Loop teller is: " + count + "<br />" ;
         console.log("Loop teller is: " + count);
     }
 }
